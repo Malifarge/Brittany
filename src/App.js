@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
   body{
     background: ${DefaultBackground};
     color: ${defaultColor};
+    line-height: 1.3;
   }
 
   a:hover{
@@ -17,8 +18,20 @@ const GlobalStyle = createGlobalStyle`
     content: "0" counter(item) ".";
     margin-right: 5px;
     color: ${Green};
-    font-size: var(--fz-xxs);
     text-align: right;
+  }
+
+  .gptbYI::before {
+      content: "0" counter(item) ".";
+      margin-right: 5px;
+      color: ${Green};
+      text-align: right;
+  }
+
+  .TNJlq li::before{
+    content: "▹";
+    color: ${Green}
+  }
 `
 
 const App = () => {

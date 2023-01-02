@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-const PararapheBox = styled.div`
+const PararapheStartBox = styled.div`
 margin: 20px 0px 0px;
 max-width: 540px;
 `
 
-export default PararapheBox
+export default PararapheStartBox
