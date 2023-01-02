@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import Header from "./Components/Header";
-import Logo from "./Components/Logo";
-import Nav from "./Components/Nav";
+import Main from "./Components/Main";
 import { DefaultBackground, defaultColor, Green } from "./Styles/colors";
 
 const GlobalStyle = createGlobalStyle`
@@ -13,16 +12,21 @@ const GlobalStyle = createGlobalStyle`
   a:hover{
     color: ${Green}
   }
+
+  a::before {
+    content: "0" counter(item) ".";
+    margin-right: 5px;
+    color: ${Green};
+    font-size: var(--fz-xxs);
+    text-align: right;
 `
 
 const App = () => {
   return (
     <>
       <GlobalStyle/>
-      <Header>
-          <Logo/>
-          <Nav/>
-      </Header>
+      <Header/>
+      <Main/>
     </>
   );
 }

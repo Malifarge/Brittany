@@ -1,11 +1,14 @@
-import styled from "styled-components";
+import HeaderBox from "./HeaderBox"
+import Logo from "./Logo"
+import Nav from "./Nav"
 
-const Header = styled.section`
-    display: flex;
-    height: 100px;
-    padding: 0 50px;
-    justify-content: space-between;
-    align-items: center;
-`
+const Header = () =>{
+    return(
+        <HeaderBox>
+          <Logo/>
+          <Nav/>
+        </HeaderBox>
+    )
+}
 
 export default Header
