@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     text-align: right;
   }
 
-  .gptbYI::before {
+  .cRDqOX .gptbYI::before {
       content: "0" counter(item) ".";
       margin-right: 5px;
       color: ${Green};
